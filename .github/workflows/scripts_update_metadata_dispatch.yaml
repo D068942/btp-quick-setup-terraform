@@ -18,7 +18,7 @@ jobs:
             with:
               app-id: ${{ secrets.GH_ACCESS_TOKEN_APP_ID }}
               private-key: ${{ secrets.GH_ACCESS_TOKEN_APP_PK }}
-              owner: ${{ github.repository_owner }}
+              owner: "fp-core-experience"
               github-api-url: ${{ vars.GHES_API_URL }}
           - name: Trigger Workflow in Metadata Repository
             run: |
